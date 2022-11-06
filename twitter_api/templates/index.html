@@ -1,0 +1,8 @@
+{% for tweet in tweets %}
+    <tr>
+      <th scope="row">{{ tweet.tweet_id }}</th>
+      <td>{{ tweet.user }}</td>
+      <td>{{ tweet.published_date }}</td>
+      <td>{{ tweet.text }}</td>
+    </tr>
+    {% endfor %}
